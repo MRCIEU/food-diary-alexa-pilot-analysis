@@ -26,7 +26,7 @@ totalPaired = sum(sampleData$n_paired_c)
 totalPairedAndMatched = sum(sampleData$n_paired_c_timematch)
 
 proportionTimestamp = totalPairedAndMatched/totalPaired
-print(paste0("Proportion of counterpart pairs with matching intake timestamp: ", proportionTimestamp))
+print(paste0("Proportion of counterpart pairs with matching intake timestamp: ", totalPairedAndMatched, "/", totalPaired, "=", proportionTimestamp))
 
 ## summarise the proportion correct for each participant
 
