@@ -137,6 +137,7 @@ geom_bar(data=dataLongParts, aes(fill=type, y=value, x=idx), position="stack", s
 #geom_point(data=xAgg,aes(x=idx, y=total_web_items)) +
 theme(legend.position="bottom", legend.direction='vertical') +
 xlab('Participants') +
+ylab('Number of items') +
 theme(axis.ticks.x = element_blank(), axis.text.x=element_blank()) +
   scale_fill_manual(values=cbPalette, name='Item classification')
 
